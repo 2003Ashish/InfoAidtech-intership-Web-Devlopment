@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Restaurant's Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section id="home">
+            <header>
+                <a href="#" ><img src="logo.png" class ="logo"></a>
+                <ul>
+                    <li><a href="#home" class="btn">Home</a></li>
+                    <li><a href="#menu" class="btn">Menu</a></li>
+                    <li><a href="#" class="btn">What's New</a></li>
+                    <li><a href="#"  class="btn">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content" >
+                <div class="textBox">
+                    <h2>It's not about just <span>Eating</span><br>It's about <span>Experience</span></h2><br>
+                    <p>We provide a world class experience to our customers</p>
+                    <a href="#">Learn More</a>
+                </div>  
+                <div class="container">
+                    <div class="wrapper">
+                         <img src="res5.jpg">
+                        <img src="res1.jpg">
+                        <img src="res2.jpg">
+                        <img src="res4.jpg">
+                    </div>
+                </div> 
+            </div>
+            <ul class="sci1">
+                    <li><a href="#"><img src="fac.png" height="50"></a></li>
+                    <li><a href="#"><img src="insta.png" height="50"></a></li>
+                    <li><a href="#"><img src="link.png" height="50"></a></li>
+                    
+                </ul>
+        </section>    
+
+                <section id="menu">
+                    <div class="circle"></div>
+                <div class="content">
+                    <div class="textBox">
+                        <h2>we don't <span>Sell</span><br>We <span>Serve</span></h2><br>
+                        <p>We make our customers feel that they are at home</p>
+                    </div> 
+                    <div class="imgBox">
+                        <img src="img1.png" class="starbucks">
+                    
+                    </div>   
+                    
+                </div>
+                
+            <ul class="thumb">
+                
+                <li><img src="img1.png" height="50" onclick="imgSlider('img1.png');channgeCircleColor('#017143')"></li>
+                <li><img src="wrap.png" height="50" onclick="imgSlider('wrap.png') ;channgeCircleColor('#d752b1')"></li>
+                <li><img src="pasta.png" height="50" onclick="imgSlider('pasta.png') ;channgeCircleColor('#800000')"></li>
+                <li><img src="fries.png" height="50" onclick="imgSlider('fries.png');channgeCircleColor('#eb7495')"></li>
+                <li><img src="meal.png" height="50" onclick="imgSlider('meal.png') ;channgeCircleColor('#800080')"></li>
+                <li><img src="pizza.png" height="50" onclick="imgSlider('pizza.png') ;channgeCircleColor('#00008B')"></li>
+            </ul>
+            <ul class="sci">
+                <li><a href="#"><img src="fac.png" height="50"></a></li>
+                <li><a href="#"><img src="insta.png" height="50"></a></li>
+                <li><a href="#"><img src="link.png" height="50"></a></li>
+                
+            </ul>
+            </section>
+            <script type="text/javascript">
+                function imgSlider(anything){
+                    document.querySelector('.starbucks').src=anything;
+    
+                }
+                function channgeCircleColor(color){
+                    const circle = document.querySelector('.circle');
+                    circle.style.background = color;
+                }     
+                </script>
+                
+    </body>
+</html>

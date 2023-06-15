@@ -1,0 +1,232 @@
+@import url("https://fonts.google0apis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+#home{
+    background-image: url("roa.png");
+  }
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#menu{
+    background-color: rgb(15, 15, 15);
+}
+header{
+    position: absolute;
+    background-image: url(images/roa.jpg);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    max-width: 80px;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+}
+.content .textBox h2{
+    color: rgb(129, 128, 116);
+    font-size: 3em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content .textBox h2 span{
+    color: rgb(253, 0, 0);
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.content .textBox p{
+    color: rgb(29, 214, 199);
+}
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #ce2b2b;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .imgBox li{
+    list-style: none;
+}
+.content .imgBox img{
+    max-width: 600px;
+}
+.thumb
+{
+   position: absolute;
+   left: 50%;
+   bottom: 20px;
+   transform: translate(-50%);
+   display: flex; 
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+.sci{
+    position: absolute;
+    top: 50%;
+    right: 1px;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li:hover{
+    transform: translateY(-15px);
+    
+}
+.sci li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+.sci li a{
+    display: inline-block;
+    filter: invert(0);
+    margin: 5px 0;
+    transform: scale(0.6);
+}
+.sci1{
+    position: absolute;
+    left: 15%;
+    bottom: 100px;
+    transform: translate(-50%);
+    display: flex;
+}
+.sci1 li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+.sci1 li:hover{
+    transform: translateY(-15px);
+    
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e40c0c;
+    clip-path: circle(600px at right 800px);
+}
+.btn{
+    display: block;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #fd3232;  
+}
+.container{
+    width: 500px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    margin-top: 50px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 75%;
+    overflow: hidden;
+    border: 10px solid #e60d0d;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+img{
+    width: 100%;
+}

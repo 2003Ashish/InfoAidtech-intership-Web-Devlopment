@@ -1,1 +1,2 @@
-
+#Task 2
+To devlop a bsic calculator that performs simple arithmetic operations suc as addition, subtraction, multiplication and division.
